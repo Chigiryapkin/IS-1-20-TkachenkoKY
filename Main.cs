@@ -37,6 +37,7 @@ namespace IS_1_20_TkachenkoKY
                 metroLabel1.Text = Auth.auth_id;
                 metroLabel1.Text = Auth.auth_fio;
                 metroLabel1.Text = "Успешно!";
+                metroLabel2.Text = $"Здравствуйте,{Auth.auth_fio}";
                 //Красим текст в label в зелёный цвет
 
             }
@@ -46,6 +47,11 @@ namespace IS_1_20_TkachenkoKY
                 //Закрываем форму
                 this.Close();
             }
+        }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

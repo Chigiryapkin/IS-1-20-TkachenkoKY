@@ -15,7 +15,7 @@ namespace IS_1_20_TkachenkoKY
     public partial class Authh : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_28;database=is_1_20_st28_KURS;password=50754486;";
+        string connStr = "server=10.90.12.110;port=33333;user=st_1_20_28;database=is_1_20_st28_KURS;password=50755486;";
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -44,7 +44,7 @@ namespace IS_1_20_TkachenkoKY
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
-            string sql = $"SELECT fio_Employee, email_Employee, id_Employee, login FROM T_Employee WHERE login='{login_user}'";
+            string sql = $"SELECT id_Employee, fio_Employee, email_Employee, login FROM T_Employee WHERE login='{login_user}'";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(sql, conn);
             // объект для чтения ответа сервера
