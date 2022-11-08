@@ -111,5 +111,10 @@ namespace IS_1_20_TkachenkoKY
         {
             this.Close();
         }
+
+        private void metroTextBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
