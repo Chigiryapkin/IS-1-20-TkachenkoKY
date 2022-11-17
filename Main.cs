@@ -63,5 +63,10 @@ namespace IS_1_20_TkachenkoKY
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

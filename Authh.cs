@@ -40,7 +40,7 @@ namespace IS_1_20_TkachenkoKY
         public void GetUserInfo(string login_user)
         {
             //Объявлем переменную для запроса в БД
-            string selected_id_stud = metroTextBox1.Text;
+            string selected_id_stud = textBox1.Text;
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
@@ -82,8 +82,8 @@ namespace IS_1_20_TkachenkoKY
             command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
             command.Parameters.Add("@up", MySqlDbType.VarChar, 25);
             //Присваиваем параметрам значение
-            command.Parameters["@un"].Value = metroTextBox1.Text;
-            command.Parameters["@up"].Value = sha256(metroTextBox2.Text);
+            command.Parameters["@un"].Value = TextBox1.Text;
+            command.Parameters["@up"].Value = sha256(TextBox2.Text);
             //Заносим команду в адаптер
             adapter.SelectCommand = command;
             //Заполняем таблицу
@@ -96,7 +96,7 @@ namespace IS_1_20_TkachenkoKY
                 //Присваеваем глобальный признак авторизации
                 Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
-                GetUserInfo(metroTextBox1.Text);
+                GetUserInfo(TextBox1.Text);
                 //Закрываем форму
                 this.Close();
             }
@@ -115,6 +115,31 @@ namespace IS_1_20_TkachenkoKY
         private void metroTextBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            textBox2.Clear();
         }
     }
     }
