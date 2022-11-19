@@ -46,7 +46,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.BackColor = System.Drawing.Color.Black;
-            this.metroLabel1.Location = new System.Drawing.Point(163, 97);
+            this.metroLabel1.Location = new System.Drawing.Point(185, 83);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(193, 19);
             this.metroLabel1.TabIndex = 0;
@@ -55,9 +55,9 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(124, 201);
+            this.metroButton1.Location = new System.Drawing.Point(77, 189);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(327, 50);
+            this.metroButton1.Size = new System.Drawing.Size(466, 50);
             this.metroButton1.TabIndex = 2;
             this.metroButton1.Text = "Сотрудники";
             this.metroButton1.UseSelectable = true;
@@ -65,18 +65,18 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(124, 257);
+            this.metroButton2.Location = new System.Drawing.Point(77, 267);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(327, 50);
+            this.metroButton2.Size = new System.Drawing.Size(466, 50);
             this.metroButton2.TabIndex = 3;
             this.metroButton2.Text = "Выход из системы";
             this.metroButton2.UseSelectable = true;
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(124, 145);
+            this.metroButton3.Location = new System.Drawing.Point(77, 105);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(327, 50);
+            this.metroButton3.Size = new System.Drawing.Size(466, 50);
             this.metroButton3.TabIndex = 4;
             this.metroButton3.Text = "Меню";
             this.metroButton3.UseSelectable = true;
@@ -84,7 +84,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(43, 145);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 105);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +94,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(43, 201);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 189);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(86, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,18 +104,19 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(43, 257);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 267);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(86, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(143, 38);
+            this.label1.Location = new System.Drawing.Point(161, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 37);
             this.label1.TabIndex = 8;
@@ -126,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 346);
+            this.ClientSize = new System.Drawing.Size(543, 349);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

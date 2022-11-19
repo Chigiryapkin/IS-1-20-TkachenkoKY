@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace IS_1_20_TkachenkoKY
 {
-    public partial class Authh : MetroFramework.Forms.MetroForm
+    public partial class Authh : Form
     {
         // строка подключения к БД
         string connStr = "server=10.90.12.110;port=33333;user=st_1_20_28;database=is_1_20_st28_KURS;password=50755486;";
@@ -82,8 +82,8 @@ namespace IS_1_20_TkachenkoKY
             command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
             command.Parameters.Add("@up", MySqlDbType.VarChar, 25);
             //Присваиваем параметрам значение
-            command.Parameters["@un"].Value = TextBox1.Text;
-            command.Parameters["@up"].Value = sha256(TextBox2.Text);
+            command.Parameters["@un"].Value = textBox1.Text;
+            command.Parameters["@up"].Value = sha256(textBox2.Text);
             //Заносим команду в адаптер
             adapter.SelectCommand = command;
             //Заполняем таблицу
@@ -96,7 +96,7 @@ namespace IS_1_20_TkachenkoKY
                 //Присваеваем глобальный признак авторизации
                 Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
-                GetUserInfo(TextBox1.Text);
+                GetUserInfo(textBox1.Text);
                 //Закрываем форму
                 this.Close();
             }
@@ -107,22 +107,7 @@ namespace IS_1_20_TkachenkoKY
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void metroTextBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
@@ -131,15 +116,6 @@ namespace IS_1_20_TkachenkoKY
         {
 
         }
-
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-        }
-
-        private void textBox2_Enter(object sender, EventArgs e)
-        {
-            textBox2.Clear();
-        }
     }
-    }
+}
+    
