@@ -14,12 +14,13 @@ namespace IS_1_20_TkachenkoKY
 {
     public partial class Main : MetroFramework.Forms.MetroForm
     {
+        private Form currentChildForm;
         public Main()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
         {
             //Сокрытие текущей формы
             this.Hide();
@@ -36,40 +37,51 @@ namespace IS_1_20_TkachenkoKY
                 metroLabel1.ForeColor = Color.GreenYellow;
                 metroLabel1.Text = Auth.auth_id;
                 metroLabel1.Text = Auth.auth_fio;
-                metroLabel1.Text = "Успешно!";
-                metroLabel1.Text = $"Здравствуйте,{Auth.auth_fio}";
+                metroLabel1.Text = $"Здравствуйте, {Auth.auth_fio}";
                 //Красим текст в label в зелёный цвет
-
             }
             //иначе
             else
             {
                 //Закрываем форму
-                this.Close();
+                Application.Exit();
             }
         }
 
-        private void metroLabel2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
+            //Сокрытие текущей формы
+            this.Hide();
+            //Инициализируем и вызываем форму диалога авторизации
+            Authh f = new Authh();
+            //Вызов формы в режиме диалога
+            f.ShowDialog();
+            this.Close();
         }
 
-        private void metroLabel1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            //Сокрытие текущей формы
+            this.Hide();
+            //Инициализируем и вызываем форму сотрудники
+            Employee f = new Employee();
+            //Вызов формы в режиме диалога
+            f.ShowDialog();
+            this.Close();
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            //Сокрытие текущей формы
+            this.Hide();
+            //Инициализируем и вызываем форму сотрудники
+             f = new ();
+            //Вызов формы в режиме диалога
+            f.ShowDialog();
+            this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

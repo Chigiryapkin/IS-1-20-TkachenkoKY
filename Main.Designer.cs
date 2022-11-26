@@ -51,32 +51,30 @@
             this.metroLabel1.Size = new System.Drawing.Size(193, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "АВТОРИЗАЦИЯ НЕ УДАЛАСЬ";
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(77, 189);
+            this.metroButton1.Location = new System.Drawing.Point(168, 189);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(466, 50);
+            this.metroButton1.Size = new System.Drawing.Size(269, 50);
             this.metroButton1.TabIndex = 2;
             this.metroButton1.Text = "Сотрудники";
             this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(77, 267);
+            this.metroButton2.Location = new System.Drawing.Point(168, 245);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(466, 50);
+            this.metroButton2.Size = new System.Drawing.Size(269, 50);
             this.metroButton2.TabIndex = 3;
             this.metroButton2.Text = "Выход из системы";
             this.metroButton2.UseSelectable = true;
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(77, 105);
+            this.metroButton3.Location = new System.Drawing.Point(168, 133);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(466, 50);
+            this.metroButton3.Size = new System.Drawing.Size(269, 50);
             this.metroButton3.TabIndex = 4;
             this.metroButton3.Text = "Меню";
             this.metroButton3.UseSelectable = true;
@@ -84,7 +82,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 105);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 133);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +92,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 189);
+            this.pictureBox2.Location = new System.Drawing.Point(87, 189);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(86, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,13 +102,12 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 267);
+            this.pictureBox3.Location = new System.Drawing.Point(87, 245);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(86, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label1
             // 
@@ -121,7 +118,6 @@
             this.label1.Size = new System.Drawing.Size(241, 37);
             this.label1.TabIndex = 8;
             this.label1.Text = "Личный кабинет";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Main
             // 
@@ -137,7 +133,6 @@
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel1);
             this.Name = "Main";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
